@@ -1,10 +1,15 @@
+import { Route, Routes } from "react-router-dom"
+import { Login } from "./components/Login"
+import { Register } from "./components/Register"
+
 
 function App() {
 
   return (
-    <>
-      <p>app de finanças</p>
-    </>
+    <Routes>
+      <Route path="/" element={ <Login />} />
+      <Route path="/register" element={ <Register />} />
+    </Routes>
   )
 }
 
